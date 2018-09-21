@@ -1,0 +1,81 @@
+/*
+Write CSS to make the above markup look like this: https://zillow.invisionapp.com/boards/7P3MT1I5GDA/#/6102918
+
+There are multiple ways to do it, so don't think that there's only one solution.
+*/
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  color: teal;
+  border-bottom: 1px solid gray;
+}
+
+.photo-card {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQzPMKO2MbGALkZoh0tRhjntDyIFl2YetBQ2oqjEm6KL6dc8V");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 200px;
+  width: 375px;
+}
+
+/***** FONT SIZES *****/
+.photo-card-price {
+ font-size: 26px;
+}
+
+.photo-card-addr {
+  font-size: 14px;
+}
+
+.photo-card-type {
+  font-size: 13px;
+}
+
+.photo-card-basics {
+  list-style-type: none;
+}
+
+.photo-card-type-icon {
+  background-color: red;
+  border-radius: 50%;
+  height: 15px;
+  display: inline-block;
+  width: 15px;
+}
+
+/***** HEART BUTTON *****/
+button {
+  background-color: red;
+  color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 20px 20px;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+button:before,
+button:after {
+  background-color: red;
+  border-radius: 50%;
+  content: "";
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+/* top left of heart */
+button:before {
+  left: 0;
+  top: -15px;
+}
+
+/* top right of heart */
+button:after {
+  left: 15px;
+  top: 0;
+}
