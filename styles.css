@@ -14,12 +14,17 @@ h1 {
   border-bottom: 1px solid gray;
 }
 
-.photo-card {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQzPMKO2MbGALkZoh0tRhjntDyIFl2YetBQ2oqjEm6KL6dc8V");
-  background-repeat: no-repeat;
-  background-position: top;
+/* .photo-card {
   height: 200px;
   width: 375px;
+} */
+.photo-card-img {
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 375px;
+    padding: 0 15px;
+    /* margin-top: -231px; */
+    background-position: left top;
 }
 
 /***** FONT SIZES *****/
@@ -36,6 +41,7 @@ h1 {
 }
 
 .photo-card-basics {
+  font-size: 14px;
   list-style-type: none;
 }
 
